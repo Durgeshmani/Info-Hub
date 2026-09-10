@@ -1,0 +1,5 @@
+{
+  "modules": [
+    { "id": "employee-info", "path": "employee-info", "enabled": true }
+  ]
+}
