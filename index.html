@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoHub — Information Management</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">REGISTRY</span>
+        <span class="brand-name">InfoHub</span>
+      </div>
+
+      <div>
+        <p class="nav-label">Modules</p>
+        <nav class="module-nav" id="module-nav" aria-label="Modules"></nav>
+      </div>
+
+      <p class="sidebar-foot">
+        Data is stored in this browser only. Each module keeps its own
+        records, so adding or removing a module never touches another
+        module's data.
+      </p>
+    </aside>
+
+    <main class="main">
+      <header class="main-header">
+        <h1 id="module-title">Loading…</h1>
+        <p id="module-desc"></p>
+      </header>
+      <section class="main-content" id="module-content"></section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/loader.js"></script>
+</body>
+</html>
